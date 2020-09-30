@@ -5,6 +5,24 @@
         <q-toolbar-title>
           Quote Generator
         </q-toolbar-title>
+        <div>
+          Made by
+          <a
+            class="text-white"
+            flat
+            href="http://github.com/thobiasvicente"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Thobias VIcente</a
+          >
+          <q-icon
+            name="fab fa-github"
+            size="md"
+            class="q-px-md"
+            @click="openLink"
+            style="cursor:pointer"
+          />
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -26,6 +44,11 @@ export default {
 
   data() {
     return {};
+  },
+  methods: {
+    openLink() {
+      window.open("http://github.com/thobiasvicente", "_blank");
+    },
   },
 };
 </script>
